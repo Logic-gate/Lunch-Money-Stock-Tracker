@@ -2,6 +2,9 @@
 
 Lunch Money Stock Tracker is a temporary Chrome extension that helps you track your stock investments directly within the Lunch Money app. It provides and calculates the cumulative value of your investments.
 
+[![Demo]()](https://ki.tc/f/stream/sharpening.wideness.maintains)
+
+
 ## Features
 
 - Toggle the extension on and off from the popup.
@@ -25,7 +28,7 @@ Lunch Money Stock Tracker is a temporary Chrome extension that helps you track y
 
 ## Files
 
-- **investments.trades**: Sample file containing trades and prices data for the extension to process; Format loosely based on Beancount. Please make sure that the Display Name mathced the Ticker Symbol in `YYYY-MM-DD * SHARES TICKER {PRICE CURRENCY}`
+- **investments.trades**: Sample file containing trades and prices data for the extension to process; Format loosely based on Beancount. Please make sure that the Display Name mathces the Ticker Symbol in `YYYY-MM-DD * SHARES TICKER {PRICE CURRENCY}`
 
 
 ## Example `investments.trades`
@@ -116,4 +119,4 @@ Lunch Money Stock Tracker is a temporary Chrome extension that helps you track y
 
 - Manual Prices: Currently, the extension requires users to manually input their trades and prices into the `investments.trades` file. This means users need to keep the file updated with their latest transactions and price data for accurate calculations. While this approach provides flexibility, it also adds a layer of manual effort and can be prone to errors if the data is not kept up-to-date.
 
--Passive Calculations: The calculations performed by the extension are passive and not persistent. This means that the extension processes and displays investment data in real-time based on the current state of the `investments.trades` file. However, these calculations are not stored or recorded anywhere. Each time the extension is loaded or refreshed, it recalculates everything from scratch. This approach does not provide a historical record of past calculations or changes over time.
+- Passive Calculations: The calculations performed by the extension are passive and not persistent. This means that the extension processes and displays investment data in real-time based on the current state of the `investments.trades` file. However, these calculations are not stored or recorded anywhere. Each time the extension is loaded or refreshed, it recalculates everything from scratch. This approach does not provide a historical record of past calculations or changes over time.
