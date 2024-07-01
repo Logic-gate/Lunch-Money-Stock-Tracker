@@ -2,8 +2,6 @@
 
 Lunch Money Stock Tracker is a temporary Chrome extension that helps you track your stock investments directly within the Lunch Money app. It provides and calculates the cumulative value of your investments.
 
-[![Demo]()](https://ki.tc/f/stream/sharpening.wideness.maintains)
-
 
 ## Features
 
