@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Lunch Money Stock Tracker",
+  "version": "1.4",
+  "description": "Track stock investments in Lunch Money",
+  "permissions": ["activeTab", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.lunchmoney.app/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "images/mascot.png"
+    }
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["investments.trades"],
+      "matches": ["*://*.lunchmoney.app/*"]
+    }
+  ]
+}
